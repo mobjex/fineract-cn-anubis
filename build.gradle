@@ -17,6 +17,13 @@
 
 group 'com.github.mobjex.fineract-cn-anubis'
 
+task clean {
+    dependsOn gradle.includedBuild('api').task(':clean')
+    dependsOn gradle.includedBuild('library').task(':clean')
+    dependsOn gradle.includedBuild('test').task(':clean')
+    dependsOn gradle.includedBuild('component-test').task(':clean')
+}
+
 task publishApiToMavenLocal {
     dependsOn gradle.includedBuild('api').task(':publishToMavenLocal')
 }
