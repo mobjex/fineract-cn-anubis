@@ -1,3 +1,5 @@
+[![Release](https://jitpack.io/v/mobjex/fineract-cn-anubis.svg)](https://jitpack.io/#mobjex/fineract-cn-anubis)
+
 # Apache Fineract CN Authorization Library
 
 This project provides authorization for Apache Fineract CN services.
